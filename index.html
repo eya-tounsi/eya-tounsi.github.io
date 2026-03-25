@@ -3,6 +3,205 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eya Tounsi | Portfolio Ingénieur IA & Data</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; transition: background-color 0.3s, color 0.3s; }
+        .hover-lift { transition: transform 0.2s ease; }
+        .hover-lift:hover { transform: translateY(-4px); }
+        [data-lang="en"] { display: none; }
+    </style>
+</head>
+<body class="bg-white text-zinc-900 dark:bg-zinc-950 dark:text-zinc-100 antialiased">
+
+    <div class="fixed top-6 right-6 z-50 flex gap-2">
+        <button onclick="toggleLanguage()" class="px-3 py-2 rounded-xl border border-zinc-200 dark:border-zinc-800 bg-white/90 dark:bg-zinc-900/90 backdrop-blur-md shadow-sm font-bold text-xs hover:bg-zinc-100 dark:hover:bg-zinc-800 transition-all">
+            <span id="lang-label">EN</span>
+        </button>
+        <button onclick="toggleTheme()" class="p-3 rounded-xl border border-zinc-200 dark:border-zinc-800 bg-white/90 dark:bg-zinc-900/90 backdrop-blur-md shadow-sm hover:scale-105 transition-all">
+            <span id="theme-icon">🌙</span>
+        </button>
+    </div>
+
+    <main class="max-w-4xl mx-auto px-6 py-16 sm:py-24">
+        
+        <header class="mb-16">
+            <h1 class="text-6xl font-extrabold mb-6 tracking-tighter">Eya Tounsi</h1>
+            <div class="space-y-4">
+                <div data-lang="fr">
+                    <p class="text-2xl text-blue-600 dark:text-blue-400 font-semibold italic mb-2">Alternance 3 ans : Big Data & Machine Learning (2026-2029)</p>
+                    <p class="text-xl text-zinc-600 dark:text-zinc-400 font-light max-w-2xl leading-relaxed">
+                        Étudiante à <strong>Polytech Paris-Saclay</strong>, j'intègre le cycle ingénieur <strong>IIM</strong> (Informatique et Ingénierie Mathématique) avec une spécialisation en <strong>Intelligence Artificielle</strong>.
+                    </p>
+                </div>
+                <div data-lang="en">
+                    <p class="text-2xl text-blue-600 dark:text-blue-400 font-semibold italic mb-2">3-year Apprenticeship: Big Data & Machine Learning (2026-2029)</p>
+                    <p class="text-xl text-zinc-600 dark:text-zinc-400 font-light max-w-2xl leading-relaxed">
+                        Student at <strong>Polytech Paris-Saclay</strong>, joining the <strong>IIM</strong> Engineering cycle with a focus on <strong>Artificial Intelligence</strong>.
+                    </p>
+                </div>
+            </div>
+            <div class="mt-8 flex flex-wrap gap-6 text-sm font-semibold text-zinc-500">
+                <a href="https://linkedin.com/in/eya-tounsi-82752b35b" target="_blank" class="hover:text-blue-600 transition-colors border-b border-zinc-200 dark:border-zinc-800 pb-1">LinkedIn</a>
+                <a href="https://github.com/eya-tounsi" target="_blank" class="hover:text-blue-600 transition-colors border-b border-zinc-200 dark:border-zinc-800 pb-1">GitHub</a>
+                <span>Palaiseau, France</span>
+            </div>
+        </header>
+
+        <section class="mb-20">
+            <h2 class="text-xs uppercase tracking-[0.3em] text-zinc-400 mb-8 font-bold" data-i18n="profile-title">Objectif</h2>
+            <p class="text-2xl font-light leading-snug text-zinc-800 dark:text-zinc-200" data-lang="fr">
+                Passionnée par le <strong>Machine Learning</strong> et le <strong>Big Data</strong>, je me spécialise dans l'analyse de données complexes et la performance algorithmique pour développer des solutions d'<strong>IA</strong> fiables et innovantes.
+            </p>
+            <p class="text-2xl font-light leading-snug text-zinc-800 dark:text-zinc-200" data-lang="en">
+                Passionate about <strong>Machine Learning</strong> and <strong>Big Data</strong>, I specialize in complex data analysis and algorithmic performance to develop reliable and innovative <strong>AI</strong> solutions.
+            </p>
+        </section>
+
+        <section class="mb-20">
+            <h2 class="text-xs uppercase tracking-[0.3em] text-zinc-400 mb-10 font-bold" data-i18n="exp-title">Expériences</h2>
+            <div class="space-y-12">
+                <div class="relative pl-8 border-l-2 border-blue-600/20">
+                    <div class="absolute -left-[9px] top-0 w-4 h-4 rounded-full bg-blue-600"></div>
+                    <div class="flex flex-wrap justify-between items-baseline mb-2">
+                        <h3 class="text-2xl font-bold" data-lang="fr">Gestionnaire Financière</h3>
+                        <h3 class="text-2xl font-bold" data-lang="en">Financial Manager</h3>
+                        <span class="px-3 py-1 rounded-full bg-zinc-100 dark:bg-zinc-900 text-xs font-mono" id="date-present">2025 — Présent</span>
+                    </div>
+                    <p class="text-blue-600 dark:text-blue-400 mb-6 font-semibold italic text-sm">Paris-Saclay | Direction de la Recherche et de la Valorisation [cite: 72, 74]</p>
+                    <ul class="grid grid-cols-1 md:grid-cols-2 gap-4 text-zinc-600 dark:text-zinc-400 text-sm" data-lang="fr">
+                        <li>• Automatisation de tableaux de bord (VBA) pour le suivi financier[cite: 75].</li>
+                        <li>• Analyse de données multi-sources et contrôle de cohérence[cite: 75].</li>
+                        <li>• Reporting data pour utilisateurs non techniques[cite: 75].</li>
+                    </ul>
+                    <ul class="grid grid-cols-1 md:grid-cols-2 gap-4 text-zinc-600 dark:text-zinc-400 text-sm" data-lang="en">
+                        <li>• Automation of dashboards (VBA) for financial tracking[cite: 75].</li>
+                        <li>• Multi-source data analysis and consistency control[cite: 75].</li>
+                        <li>• Data reporting for non-technical users[cite: 75].</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="mb-20">
+            <h2 class="text-xs uppercase tracking-[0.3em] text-zinc-400 mb-10 font-bold" data-i18n="project-title">Projets Ingénieur</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div class="p-6 rounded-3xl border border-zinc-100 dark:border-zinc-900 bg-zinc-50/50 dark:bg-zinc-900/20 hover-lift">
+                    <h4 class="font-bold mb-3 text-lg text-blue-600">AI & Data Science</h4>
+                    <p class="text-xs text-zinc-500 leading-relaxed" data-lang="fr">Développement d'algorithmes de traitement et visualisation avec <strong>Pandas, NumPy</strong> et <strong>Matplotlib</strong>[cite: 77, 79].</p>
+                    <p class="text-xs text-zinc-500 leading-relaxed" data-lang="en">Development of processing and visualization algorithms using <strong>Pandas, NumPy</strong>, and <strong>Matplotlib</strong>[cite: 77, 79].</p>
+                </div>
+                <div class="p-6 rounded-3xl border border-zinc-100 dark:border-zinc-900 bg-zinc-50/50 dark:bg-zinc-900/20 hover-lift">
+                    <h4 class="font-bold mb-3 text-lg text-green-600">Automation</h4>
+                    <p class="text-xs text-zinc-500 leading-relaxed" data-lang="fr">Optimisation de bilans financiers via automatisation <strong>VBA</strong>[cite: 80, 83].</p>
+                    <p class="text-xs text-zinc-500 leading-relaxed" data-lang="en">Optimization of financial reports via <strong>VBA</strong> automation[cite: 80, 83].</p>
+                </div>
+                <div class="p-6 rounded-3xl border border-zinc-100 dark:border-zinc-900 bg-zinc-50/50 dark:bg-zinc-900/20 hover-lift">
+                    <h4 class="font-bold mb-3 text-lg text-purple-600">Web Dev</h4>
+                    <p class="text-xs text-zinc-500 leading-relaxed" data-lang="fr">Interfaces interactives avec <strong>HTML/CSS, JS et PHP</strong>[cite: 84, 88].</p>
+                    <p class="text-xs text-zinc-500 leading-relaxed" data-lang="en">Interactive interfaces with <strong>HTML/CSS, JS, and PHP</strong>[cite: 84, 88].</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="mb-20">
+            <h2 class="text-xs uppercase tracking-[0.3em] text-zinc-400 mb-10 font-bold" data-i18n="assoc-title">Engagement Associatif</h2>
+            <div class="p-8 rounded-3xl border-2 border-dashed border-zinc-100 dark:border-zinc-900">
+                <div class="flex flex-wrap justify-between items-baseline mb-4">
+                    <h3 class="text-2xl font-bold text-zinc-800 dark:text-zinc-200">Interact Club North Africa [cite: 98]</h3>
+                    <span class="text-sm font-mono text-zinc-500">2022 — 2023 [cite: 99]</span>
+                </div>
+                <div data-lang="fr">
+                    <p class="text-lg text-zinc-600 dark:text-zinc-400 leading-relaxed mb-4">Organisation de projets humanitaires et levées de fonds[cite: 101].</p>
+                    <ul class="space-y-2 text-sm text-zinc-500">
+                        <li>• Développement de l'esprit d'équipe[cite: 102].</li>
+                        <li>• Pilotage de projets sociaux[cite: 102].</li>
+                    </ul>
+                </div>
+                <div data-lang="en">
+                    <p class="text-lg text-zinc-600 dark:text-zinc-400 leading-relaxed mb-4">Organization of humanitarian projects and fundraising[cite: 101].</p>
+                    <ul class="space-y-2 text-sm text-zinc-500">
+                        <li>• Development of teamwork skills[cite: 102].</li>
+                        <li>• Leading social projects[cite: 102].</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-16 py-12 border-t border-zinc-100 dark:border-zinc-900">
+            <section>
+                <h2 class="text-xs uppercase tracking-[0.3em] text-zinc-400 mb-8 font-bold" data-i18n="stack-title">Stack Technique</h2>
+                <div class="flex flex-wrap gap-2">
+                    <span class="px-3 py-1.5 rounded-lg bg-blue-600 text-white text-[10px] font-black italic">ML: PYTHON / PANDAS / NUMPY</span>
+                    <span class="px-3 py-1.5 rounded-lg border border-zinc-200 dark:border-zinc-800 text-[10px] font-bold">DATA: SQL / EXCEL VBA</span>
+                    <span class="px-3 py-1.5 rounded-lg border border-zinc-200 dark:border-zinc-800 text-[10px] font-bold">CORE: C / JS / PHP</span>
+                </div>
+            </section>
+            <section>
+                <h2 class="text-xs uppercase tracking-[0.3em] text-zinc-400 mb-8 font-bold" data-i18n="lang-title">Langues</h2>
+                <div class="flex gap-8">
+                    <div class="flex flex-col"><span class="text-lg font-bold">FR / AR</span><span class="text-[10px] text-zinc-500 uppercase" data-i18n="lang-native">Maternel [cite: 96]</span></div>
+                    <div class="flex flex-col"><span class="text-lg font-bold text-blue-600">EN</span><span class="text-[10px] text-blue-600 font-bold underline uppercase" data-i18n="lang-advanced">Avancé C1 [cite: 96]</span></div>
+                    <div class="flex flex-col"><span class="text-lg font-bold">ES</span><span class="text-[10px] text-zinc-500 uppercase" data-i18n="lang-basic">Basique A2 [cite: 96]</span></div>
+                </div>
+            </section>
+        </div>
+
+        <footer class="mt-20 flex flex-col sm:flex-row justify-between items-center gap-8 py-10">
+            <p class="text-[10px] text-zinc-400 font-mono tracking-widest uppercase">© 2026 Eya Tounsi</p>
+            <a href="mailto:eya.tounsi@universite-paris-saclay.fr" class="px-12 py-4 bg-blue-600 text-white rounded-full font-bold text-sm shadow-2xl shadow-blue-500/40 hover:bg-blue-700 transition-all active:scale-95" data-i18n="contact-btn">
+                ME CONTACTER [cite: 55]
+            </a>
+        </footer>
+
+    </main>
+
+    <script>
+        let currentLang = 'fr';
+
+        function toggleLanguage() {
+            currentLang = currentLang === 'fr' ? 'en' : 'fr';
+            document.querySelectorAll('[data-lang]').forEach(el => {
+                el.style.display = el.getAttribute('data-lang') === currentLang ? 'block' : 'none';
+            });
+            
+            const labels = {
+                fr: { btn: 'EN', date: '2025 — Présent', profile: 'Objectif', exp: 'Expériences', projects: 'Projets Ingénieur', assoc: 'Engagement Associatif', stack: 'Expertise Technique', lang: 'Langues', native: 'Maternel', advanced: 'Avancé C1', basic: 'Basique A2', contact: 'ME CONTACTER' },
+                en: { btn: 'FR', date: '2025 — Present', profile: 'Objective', exp: 'Experience', projects: 'Engineering Projects', assoc: 'Community Engagement', stack: 'Technical Stack', lang: 'Languages', native: 'Native', advanced: 'Advanced C1', basic: 'Basic A2', contact: 'CONTACT ME' }
+            };
+
+            document.getElementById('lang-label').innerText = labels[currentLang].btn;
+            document.getElementById('date-present').innerText = labels[currentLang].date;
+            document.querySelector('[data-i18n="profile-title"]').innerText = labels[currentLang].profile;
+            document.querySelector('[data-i18n="exp-title"]').innerText = labels[currentLang].exp;
+            document.querySelector('[data-i18n="project-title"]').innerText = labels[currentLang].projects;
+            document.querySelector('[data-i18n="assoc-title"]').innerText = labels[currentLang].assoc;
+            document.querySelector('[data-i18n="stack-title"]').innerText = labels[currentLang].stack;
+            document.querySelector('[data-i18n="lang-title"]').innerText = labels[currentLang].lang;
+            document.querySelector('[data-i18n="lang-native"]').innerText = labels[currentLang].native;
+            document.querySelector('[data-i18n="lang-advanced"]').innerText = labels[currentLang].advanced;
+            document.querySelector('[data-i18n="lang-basic"]').innerText = labels[currentLang].basic;
+            document.querySelector('[data-i18n="contact-btn"]').innerText = labels[currentLang].contact;
+        }
+
+        function toggleTheme() {
+            document.documentElement.classList.toggle('dark');
+            const icon = document.getElementById('theme-icon');
+            icon.innerText = document.documentElement.classList.contains('dark') ? '☀️' : '🌙';
+        }
+
+        if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+            document.documentElement.classList.add('dark');
+            document.getElementById('theme-icon').innerText = '☀️';
+        }
+    </script>
+</body>
+</html><!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Eya Tounsi | Portfolio</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">

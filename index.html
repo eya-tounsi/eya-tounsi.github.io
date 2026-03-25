@@ -7,61 +7,123 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
     <style>
-        body { font-family: 'Inter', sans-serif; transition: background-color 0.3s, color 0.3s; }
+        body { font-family: 'Inter', sans-serif; transition: background-color 0.3s, color 0.3s; scroll-behavior: smooth; }
         .skill-tag:hover { transform: translateY(-2px); }
+        .section-fade { transition: opacity 0.6s ease-out, transform 0.6s ease-out; }
     </style>
 </head>
 <body class="bg-white text-zinc-900 dark:bg-zinc-950 dark:text-zinc-100">
 
-    <div class="fixed top-6 right-6">
-        <button onclick="toggleTheme()" class="p-2 rounded-full border border-zinc-200 dark:border-zinc-800 hover:bg-zinc-100 dark:hover:bg-zinc-900 transition-all">
+    <div class="fixed top-6 right-6 z-50">
+        <button onclick="toggleTheme()" class="p-3 rounded-full border border-zinc-200 dark:border-zinc-800 bg-white/80 dark:bg-zinc-900/80 backdrop-blur-md hover:scale-110 transition-all">
             <span id="theme-icon">🌙</span>
         </button>
     </div>
 
-    <main class="max-w-2xl mx-auto px-6 py-24">
+    <main class="max-w-3xl mx-auto px-6 py-20">
         
-        <header class="mb-16">
-            <h1 class="text-4xl font-semibold mb-2">Eya Tounsi</h1>
-            <p class="text-xl text-zinc-500 dark:text-zinc-400">Élève-Ingénieure @ Polytech Paris-Saclay</p>
-            <div class="mt-4 flex gap-4 text-sm font-medium">
-                <a href="https://www.linkedin.com/in/eya-tounsi-82752b35b/" class="hover:underline text-blue-600 dark:text-blue-400">LinkedIn</a>
-                <a href="https://github.com/eya-tounsi" class="hover:underline text-blue-600 dark:text-blue-400">GitHub</a>
+        <header class="mb-20">
+            <h1 class="text-5xl font-bold mb-4">Eya Tounsi</h1>
+            <p class="text-xl text-zinc-600 dark:text-zinc-400 font-light max-w-2xl">
+                Étudiante en $2^{ème}$ année à **Polytech Paris-Saclay**[cite: 7, 14]. 
+                Future ingénieure en **Informatique et Ingénierie Mathématique (IIM)**[cite: 12, 15].
+            </p>
+            <div class="mt-6 flex flex-wrap gap-4 text-sm font-medium">
+                <a href="https://www.linkedin.com/in/eya-tounsi-82752b35b/" target="_blank" class="flex items-center gap-1 hover:text-blue-600 dark:hover:text-blue-400 transition-colors">LinkedIn</a>
+                <a href="https://github.com/eya-tounsi" target="_blank" class="flex items-center gap-1 hover:text-blue-600 dark:hover:text-blue-400 transition-colors">GitHub</a>
+                <span class="text-zinc-300 dark:text-zinc-700">|</span>
+                <span class="text-zinc-500 italic">Palaiseau, France [cite: 3]</span>
             </div>
         </header>
 
-        <section class="mb-12">
-            <h2 class="text-sm uppercase tracking-widest text-zinc-400 mb-6">Parcours</h2>
-            <div class="space-y-8">
-                <div class="border-l-2 border-zinc-100 dark:border-zinc-800 pl-6 relative">
-                    <div class="absolute w-3 h-3 bg-blue-500 rounded-full -left-[7px] top-1"></div>
-                    <h3 class="font-semibold">Cycle Ingénieur - Info & Mathématiques</h3>
-                    <p class="text-sm text-zinc-500 italic">Polytech Paris-Saclay | 2026 — 2029</p>
+        <section class="mb-20">
+            <h2 class="text-xs uppercase tracking-[0.2em] text-zinc-400 mb-6 font-semibold">Profil</h2>
+            <p class="text-lg leading-relaxed text-zinc-700 dark:text-zinc-300">
+                Rigoureuse et curieuse, je me spécialise dans l'**analyse de données** et la **fiabilisation de systèmes**[cite: 8]. 
+                Je suis particulièrement attirée par le pilotage de projets innovants dans des environnements exigeants comme l'**industrie nucléaire**[cite: 9].
+            </p>
+        </section>
+
+        <section class="mb-20">
+            <h2 class="text-xs uppercase tracking-[0.2em] text-zinc-400 mb-10 font-semibold">Expériences</h2>
+            <div class="space-y-12">
+                <div>
+                    <div class="flex flex-wrap justify-between items-baseline mb-2">
+                        <h3 class="text-xl font-semibold">Vacataire Pôle Finances Recherches</h3>
+                        <span class="text-sm text-zinc-500">2024 — Présent [cite: 23, 25]</span>
+                    </div>
+                    <p class="text-zinc-600 dark:text-zinc-400 mb-4">Université Paris-Saclay [cite: 22]</p>
+                    <ul class="list-none space-y-2 text-zinc-700 dark:text-zinc-300 text-sm">
+                        <li class="flex gap-3"><span class="text-blue-500">•</span> Automatisation de tableaux de bord Excel pour le reporting[cite: 26].</li>
+                        <li class="flex gap-3"><span class="text-blue-500">•</span> Analyse et fiabilisation de données multi-sources[cite: 26].</li>
+                        <li class="flex gap-3"><span class="text-blue-500">•</span> Rédaction de synthèses pour utilisateurs non techniques[cite: 26].</li>
+                    </ul>
                 </div>
-                <div class="border-l-2 border-zinc-100 dark:border-zinc-800 pl-6 relative">
-                    <div class="absolute w-3 h-3 bg-zinc-300 dark:bg-zinc-700 rounded-full -left-[7px] top-1"></div>
-                    <h3 class="font-semibold">Prépa Intégrée (PeP)</h3>
-                    <p class="text-sm text-zinc-500 italic">Polytech Paris-Saclay | 2024 — 2026</p>
+
+                <div>
+                    <div class="flex flex-wrap justify-between items-baseline mb-2">
+                        <h3 class="text-xl font-semibold">Caissière Épicerie</h3>
+                        <span class="text-sm text-zinc-500">Été 2022 [cite: 28]</span>
+                    </div>
+                    <p class="text-sm text-zinc-700 dark:text-zinc-300">
+                        Gestion des transactions en environnement à forte exigence de fiabilité[cite: 29].
+                    </p>
                 </div>
             </div>
         </section>
 
-        <section class="mb-12">
-            <h2 class="text-sm uppercase tracking-widest text-zinc-400 mb-6">Skills</h2>
-            <div class="flex flex-wrap gap-2">
-                <span class="skill-tag px-3 py-1 rounded-md bg-zinc-100 dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 text-sm transition-all cursor-default">Informatique</span>
-                <span class="skill-tag px-3 py-1 rounded-md bg-zinc-100 dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 text-sm transition-all cursor-default">Mathématiques Appliquées</span>
-                <span class="skill-tag px-3 py-1 rounded-md bg-zinc-100 dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 text-sm transition-all cursor-default">Algorithmique</span>
-                <span class="skill-tag px-3 py-1 rounded-md bg-zinc-100 dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 text-sm transition-all cursor-default">Data Science</span>
+        <section class="mb-20">
+            <h2 class="text-xs uppercase tracking-[0.2em] text-zinc-400 mb-10 font-semibold">Formation</h2>
+            <div class="space-y-10 border-l border-zinc-100 dark:border-zinc-800 pl-8">
+                <div class="relative">
+                    <div class="absolute -left-[37px] top-1 w-4 h-4 rounded-full bg-blue-600 border-4 border-white dark:border-zinc-950"></div>
+                    <h3 class="font-semibold text-lg">Cycle Ingénieur - Spécialité IIM</h3>
+                    <p class="text-sm text-zinc-500">Dès Septembre 2026 | Polytech Paris-Saclay [cite: 13, 15]</p>
+                </div>
+                <div class="relative">
+                    <div class="absolute -left-[37px] top-1 w-4 h-4 rounded-full bg-zinc-300 dark:bg-zinc-700 border-4 border-white dark:border-zinc-950"></div>
+                    <h3 class="font-semibold text-lg">Prépa Intégrée (PeiP 2)</h3>
+                    <p class="text-sm text-zinc-500">En cours | Polytech Paris-Saclay [cite: 14]</p>
+                </div>
+                <div class="relative">
+                    <div class="absolute -left-[37px] top-1 w-4 h-4 rounded-full bg-zinc-300 dark:bg-zinc-700 border-4 border-white dark:border-zinc-950"></div>
+                    <h3 class="font-semibold text-lg">Double Baccalauréat (Maths, PC)</h3>
+                    <p class="text-sm text-zinc-500">Lycée Pilote Menzah 8 | Mention Très Bien & Bien [cite: 17, 18, 19]</p>
+                </div>
             </div>
         </section>
 
-        <footer class="mt-24 pt-8 border-t border-zinc-100 dark:border-zinc-900">
-            <p class="text-zinc-500 dark:text-zinc-400 mb-4">À la recherche d'une alternance pour 2026.</p>
-            <a href="mailto:eya.tounsi@universite-paris-saclay.fr" class="inline-block bg-zinc-900 text-white dark:bg-white dark:text-zinc-900 px-6 py-3 rounded-lg font-medium hover:scale-105 transition-transform">
-                Me contacter
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-16 mb-20">
+            <section>
+                <h2 class="text-xs uppercase tracking-[0.2em] text-zinc-400 mb-6 font-semibold">Projets</h2>
+                <div class="space-y-4">
+                    <div class="p-4 rounded-xl border border-zinc-100 dark:border-zinc-900 bg-zinc-50/50 dark:bg-zinc-900/30">
+                        <h4 class="font-medium mb-1 tracking-tight">Projets algorithmiques </h4>
+                        <p class="text-xs text-zinc-500">Python, C, Git [cite: 34]</p>
+                    </div>
+                </div>
+            </section>
+            <section>
+                <h2 class="text-xs uppercase tracking-[0.2em] text-zinc-400 mb-6 font-semibold">Compétences</h2>
+                <div class="flex flex-wrap gap-2 text-[13px]">
+                    <span class="px-3 py-1 rounded-full bg-zinc-900 text-white dark:bg-white dark:text-zinc-900 font-medium">Python </span>
+                    <span class="px-3 py-1 rounded-full bg-zinc-100 dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800">LaTeX </span>
+                    <span class="px-3 py-1 rounded-full bg-zinc-100 dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800">NumPy / Matplotlib [cite: 39]</span>
+                    <span class="px-3 py-1 rounded-full bg-zinc-100 dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800">Excel Avancé [cite: 39]</span>
+                    <span class="px-3 py-1 rounded-full bg-zinc-100 dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800">Cybersécurité [cite: 37]</span>
+                </div>
+            </section>
+        </div>
+
+        <footer class="pt-12 border-t border-zinc-100 dark:border-zinc-900 flex flex-wrap justify-between items-center gap-6">
+            <div>
+                <p class="text-sm font-medium">Eya Tounsi</p>
+                <p class="text-xs text-zinc-500 mt-1">Alternance recherchée pour 2026[cite: 7].</p>
+            </div>
+            <a href="mailto:eya.tounsi@universite-paris-saclay.fr" class="bg-zinc-900 text-white dark:bg-white dark:text-zinc-900 px-8 py-3 rounded-full text-sm font-semibold hover:scale-105 transition-transform">
+                Me contacter [cite: 4]
             </a>
-        </footer >
+        </footer>
 
     </main>
 

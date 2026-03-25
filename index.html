@@ -8,6 +8,142 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
     <style>
         body { font-family: 'Inter', sans-serif; transition: background-color 0.3s, color 0.3s; scroll-behavior: smooth; }
+    </style>
+</head>
+<body class="bg-white text-zinc-900 dark:bg-zinc-950 dark:text-zinc-100">
+
+    <div class="fixed top-6 right-6 z-50">
+        <button onclick="toggleTheme()" class="p-3 rounded-full border border-zinc-200 dark:border-zinc-800 bg-white/80 dark:bg-zinc-900/80 backdrop-blur-md hover:scale-110 transition-all">
+            <span id="theme-icon">🌙</span>
+        </button>
+    </div>
+
+    <main class="max-w-4xl mx-auto px-6 py-20">
+        
+        <header class="mb-16">
+            <h1 class="text-5xl font-bold mb-4 tracking-tight">Eya Tounsi</h1>
+            <p class="text-xl text-zinc-600 dark:text-zinc-400 font-light max-w-2xl">
+                Étudiante en 2<sup>ème</sup> année à <strong>Polytech Paris-Saclay</strong>[cite: 58]. 
+                Future ingénieure en <strong>Informatique et Ingénierie Mathématique (IIM)</strong>[cite: 64].
+            </p>
+            <div class="mt-6 flex flex-wrap gap-4 text-sm font-medium">
+                <a href="https://linkedin.com/in/eya-tounsi-82752b35b" target="_blank" class="hover:text-blue-600 dark:hover:text-blue-400 transition-colors">LinkedIn</a>
+                <a href="https://github.com/eya-tounsi" target="_blank" class="hover:text-blue-600 dark:hover:text-blue-400 transition-colors">GitHub</a>
+                <span class="text-zinc-300 dark:text-zinc-700">|</span>
+                <span class="text-zinc-500 italic">Palaiseau, France</span> [cite: 54]
+            </div>
+        </header>
+
+        <section class="mb-16">
+            <h2 class="text-xs uppercase tracking-[0.2em] text-zinc-400 mb-6 font-semibold">Profil</h2>
+            <p class="text-lg leading-relaxed text-zinc-700 dark:text-zinc-300">
+                Rigoureuse et curieuse, je me spécialise dans l'<strong>analyse de données</strong> et la <strong>fiabilité des systèmes d'information</strong>[cite: 59, 60]. 
+                Mon objectif est de travailler sur la performance algorithmique au sein de structures exigeantes.
+            </p>
+        </section>
+
+        <section class="mb-16">
+            <h2 class="text-xs uppercase tracking-[0.2em] text-zinc-400 mb-8 font-semibold">Expériences</h2>
+            <div class="space-y-10">
+                <div class="p-6 rounded-2xl border border-zinc-100 dark:border-zinc-900 bg-zinc-50/30 dark:bg-zinc-900/10">
+                    <div class="flex flex-wrap justify-between items-baseline mb-2">
+                        <h3 class="text-xl font-semibold">Gestionnaire Financière Pôle Finances Recherches</h3>
+                        <span class="text-sm text-zinc-500 font-medium">2025 — Présent</span> [cite: 72, 73]
+                    </div>
+                    <p class="text-zinc-600 dark:text-zinc-400 mb-4 text-sm italic">Direction de la Recherche et de la Valorisation, Paris-Saclay</p> [cite: 74]
+                    <ul class="space-y-2 text-zinc-700 dark:text-zinc-300 text-sm">
+                        <li class="flex gap-3">Automalisation de tableaux de bord Excel pour le suivi et la détection d'anomalies[cite: 75].</li>
+                        <li class="flex gap-3">Analyse et fiabilisation de données multi-sources[cite: 75].</li>
+                        <li class="flex gap-3">Rédaction de synthèses pour utilisateurs non techniques[cite: 75].</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="mb-16">
+            <h2 class="text-xs uppercase tracking-[0.2em] text-zinc-400 mb-8 font-semibold">Projets Clés</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div class="p-5 rounded-xl border border-zinc-100 dark:border-zinc-900">
+                    <h4 class="font-semibold mb-2 text-sm uppercase text-blue-500">Data & Algorithmique</h4> [cite: 77]
+                    <p class="text-xs text-zinc-600 dark:text-zinc-400 leading-relaxed">
+                        Développement d'algorithmes de traitement et visualisation de jeux de données (C, Python, NumPy, Pandas, Matplotlib)[cite: 77, 79].
+                    </p>
+                </div>
+                <div class="p-5 rounded-xl border border-zinc-100 dark:border-zinc-900">
+                    <h4 class="font-semibold mb-2 text-sm uppercase text-green-500">Développement Web</h4> [cite: 84]
+                    <p class="text-xs text-zinc-600 dark:text-zinc-400 leading-relaxed">
+                        Conception de pages web et initiation au développement backend (HTML/CSS, PHP)[cite: 85, 88].
+                    </p>
+                </div>
+                <div class="p-5 rounded-xl border border-zinc-100 dark:border-zinc-900">
+                    <h4 class="font-semibold mb-2 text-sm uppercase text-orange-500">Automatisation Financière</h4> [cite: 80]
+                    <p class="text-xs text-zinc-600 dark:text-zinc-400 leading-relaxed">
+                        Automatisation de la rédaction de bilans financiers avec VBA et Excel[cite: 80, 83].
+                    </p>
+                </div>
+                <div class="p-5 rounded-xl border border-zinc-100 dark:border-zinc-900">
+                    <h4 class="font-semibold mb-2 text-sm uppercase text-zinc-400">Engagement Associatif</h4> [cite: 97]
+                    <p class="text-xs text-zinc-600 dark:text-zinc-400 leading-relaxed">
+                        Membre active d'Interact Club North Africa : gestion de projets humanitaires et levées de fonds[cite: 98, 101].
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-12 mb-16 pt-12 border-t border-zinc-100 dark:border-zinc-900">
+            <section>
+                <h2 class="text-xs uppercase tracking-[0.2em] text-zinc-400 mb-6 font-semibold">Stack Technique</h2>
+                <div class="flex flex-wrap gap-2">
+                    <span class="px-2 py-1 rounded bg-zinc-900 text-white dark:bg-white dark:text-zinc-900 text-[10px] font-bold">PYTHON</span>
+                    <span class="px-2 py-1 rounded border border-zinc-200 dark:border-zinc-800 text-[10px]">PANDAS / NUMPY</span> [cite: 93]
+                    <span class="px-2 py-1 rounded border border-zinc-200 dark:border-zinc-800 text-[10px]">C / SQL</span> [cite: 90]
+                    <span class="px-2 py-1 rounded border border-zinc-200 dark:border-zinc-800 text-[10px]">VBA / EXCEL</span> 
+                    <span class="px-2 py-1 rounded border border-zinc-200 dark:border-zinc-800 text-[10px]">HTML/CSS/JS</span> [cite: 90]
+                </div>
+            </section>
+            <section>
+                <h2 class="text-xs uppercase tracking-[0.2em] text-zinc-400 mb-6 font-semibold">Langues</h2>
+                <div class="flex gap-4 text-xs">
+                    <div><span class="font-bold">FR/AR</span> <span class="text-zinc-400 italic">C2</span></div> [cite: 96]
+                    <div><span class="font-bold text-blue-500">EN</span> <span class="text-blue-500 italic">C1</span></div> [cite: 96]
+                    <div><span class="font-bold">ES</span> <span class="text-zinc-400 italic">A2</span></div> [cite: 96]
+                </div>
+            </section>
+        </div>
+
+        <footer class="flex justify-between items-center py-6">
+            <p class="text-[10px] text-zinc-400 uppercase tracking-widest">© 2026 Eya Tounsi</p>
+            <a href="mailto:eya.tounsi@universite-paris-saclay.fr" class="bg-blue-600 text-white px-8 py-3 rounded-full text-xs font-bold hover:bg-blue-700 transition-colors">
+                ME CONTACTER
+            </a> [cite: 55]
+        </footer>
+
+    </main>
+
+    <script>
+        function toggleTheme() {
+            const html = document.documentElement;
+            const icon = document.getElementById('theme-icon');
+            if (html.classList.contains('dark')) {
+                html.classList.remove('dark');
+                icon.innerText = '🌙';
+            } else {
+                html.classList.add('dark');
+                icon.innerText = '☀️';
+            }
+        }
+    </script>
+</body>
+</html><!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eya Tounsi | Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; transition: background-color 0.3s, color 0.3s; scroll-behavior: smooth; }
         .skill-tag:hover { transform: translateY(-2px); }
     </style>
 </head>
